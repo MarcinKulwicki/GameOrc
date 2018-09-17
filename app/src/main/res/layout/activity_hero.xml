@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HeroActivity">
+
+    <TextView
+        android:id="@+id/textClicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello in game Kill Orc or Troll"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <Button
+        android:id="@+id/buttonWarrior"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageAssassin"
+        android:layout_marginTop="-135dp"
+        android:text="Warrior"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textClicker"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <Button
+        android:id="@+id/buttonMag"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/imageMag"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:text="Mag"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAssasin"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAssasin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWarrior" />
+
+    <Button
+        android:id="@+id/buttonAssasin"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="170dp"
+        android:text="Assasin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMag" />
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editName"
+        android:layout_alignStart="@+id/buttonMag"
+        android:text="Name: "
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-100dp"
+        android:layout_marginTop="33dp"
+        android:layout_toEndOf="@+id/buttonAssasin"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Jacek"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageWarrior"
+        android:layout_width="154dp"
+        android:layout_height="102dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="26dp"
+        app:srcCompat="@drawable/warrior" />
+
+    <ImageView
+        android:id="@+id/imageMag"
+        android:layout_width="81dp"
+        android:layout_height="106dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginTop="114dp"
+        app:srcCompat="@drawable/mag" />
+
+    <ImageView
+        android:id="@+id/imageAssassin"
+        android:layout_width="113dp"
+        android:layout_height="142dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="135dp"
+        android:layout_marginEnd="14dp"
+        app:srcCompat="@drawable/assassin" />
+
+
+</RelativeLayout>
